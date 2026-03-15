@@ -1,5 +1,9 @@
 # Hyprland-3.0
 
+![First image](/home/dima/Pictures/20260315_11h37m33s_grim.png)
+![Second image](/home/dima/Pictures/20260315_11h37m50s_grim.png)
+![Third image](/home/dima/Pictures/20260315_11h38m14s_grim.png)
+
 ## Description:
 That is hyprland setup with pywal colors
 
