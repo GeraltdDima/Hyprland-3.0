@@ -7,12 +7,12 @@ That is hyprland setup with pywal colors
 
 ### Arch:
 ```
-sudo pacman -S hyprland wofi waybar swww alacritty nvim mako python-pywal --needed
+sudo pacman -S hyprland wofi waybar swww alacritty nvim mako python-pywal stow --needed
 ```
 
 ### Fedora:
 ```
-sudo dnf install hyprland wofi waybar swww alacritty nvim mako python-pywal
+sudo dnf install hyprland wofi waybar swww alacritty nvim mako python-pywal stow
 ```
 
 ## Fonts:
