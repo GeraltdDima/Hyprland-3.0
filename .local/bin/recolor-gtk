@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+THEME="$HOME/.themes/Graphite-Dark-compact"
+
+for dir in gtk-3.0 gtk-4.0; do
+    CSS="$THEME/$dir/gtk.css"
+
+    # background
+    sed -i 's/#2C2C2C/@background/g' "$CSS"
+    sed -i 's/#242424/@background/g' "$CSS"
+
+    # foreground
+    sed -i 's/white/@foreground/g' "$CSS"
+
+    # accent
+    sed -i 's/#E0E0E0/@color4/g' "$CSS"
+
+    # borders
+    sed -i 's/rgba(255, 255, 255, 0.12)/alpha(@foreground,0.12)/g' "$CSS"
+
+done
+
+# перезагрузка темы
+gsettings set org.gnome.desktop.interface gtk-theme Graphite-Dark-compact

@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+WALLPAPER=$1
+
+swww img "$WALLPAPER" \
+    --transition-type fade \
+    --transition-fps 60 \
+    --transition-duration 1.2 \
+
+wal -i "$WALLPAPER"
+generate_mako
+recolor-gtk
+launch-waybar
