@@ -1,0 +1,47 @@
+@import ".cache/wal/colors-waybar.css";
+
+window {
+  background-color: @background;
+}
+
+* {
+  font-family: "JetBrains Mono";
+  color: @foreground;
+}
+
+#scroll {
+  padding: 0.5rem;
+}
+
+#input {
+  background-color: @color0;
+  color: @foreground;
+  outline: none;
+  box-shadow: none;
+  border: 0;
+  border-radius: 0;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+#inner-box {
+  margin: 0.5rem;
+  font-size: 1rem;
+}
+
+#img {
+  margin: 10px;
+}
+
+#entry {
+  border-radius: 0.5rem;
+}
+
+#entry:selected {
+  background-color: @color3;
+  outline: none;
+}
+
+#text:selected {
+  color: white;
+}

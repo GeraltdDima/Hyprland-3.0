@@ -1,0 +1,207 @@
+@import url("/home/dima/.cache/wal/colors-waybar.css");
+
+* {
+    border: none;
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 11px;
+    min-height: 0;
+    transition: background-color 0.1s ease;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+/* расстояние между капсулами */
+
+.modules-left > widget,
+.modules-center > widget,
+.modules-right > widget {
+    margin: 6px;
+}
+
+/* ===== КАПСУЛЫ ===== */
+
+#arch,
+#time,
+#hardware,
+#utils,
+#power,
+#tray {
+
+    background: @background;
+    color: @foreground;
+
+    border-radius: 14px;
+    padding: 4px 12px;
+}
+
+/* ===== ARCH ICON ===== */
+
+#custom-arch {
+    font-size: 16px;
+}
+
+/* ===== ВНУТРЕННИЕ ОТСТУПЫ ===== */
+
+#arch * {
+    margin: 0 6px;
+}
+
+#time * {
+    margin: 0 4px;
+}
+
+/* больше воздуха */
+
+#hardware * {
+    margin: 0 5px;
+}
+
+#utils * {
+    margin: 0 8px;
+}
+
+/* power icons крупнее */
+
+#power * {
+    margin: 0 6px;
+    font-size: 13px;
+}
+
+/* ===== WORKSPACES ===== */
+
+#workspaces button {
+    padding: 2px 4px;
+    border-radius: 10px;
+    margin: 0 3px;
+    background: transparent;
+    color: @foreground;
+    border: none;
+}
+
+#workspaces button:hover {
+    background: none; /* Removes the background change */
+    border: none;      /* Removes any border change */
+    box-shadow: none;  /* Removes any shadow effect */
+}
+
+#workspaces button.active {
+    background: @color2;
+    color: @background;
+}
+
+/* ===== CLOCK ===== */
+
+#clock {
+    font-weight: 600;
+}
+
+/* ===== CAVA ===== */
+
+#custom-cava {
+    color: @color5;
+    font-weight: bold;
+    font-size: 5px;
+}
+
+/* ===== AUDIO ===== */
+
+#pulseaudio {
+    padding: 0 4px;
+}
+
+#pulseaudio.muted {
+    color: @color8;
+}
+
+/* ===== BATTERY ===== */
+
+#battery.warning {
+    color: @color3;
+}
+
+#battery.critical {
+    color: @color1;
+}
+
+/* ===== TRAY ===== */
+
+#tray {
+    padding: 6px 10px;
+}
+
+/* ===== POWER BUTTON ===== */
+
+#custom-power {
+    color: @color1;
+    font-weight: bold;
+}
+
+/* ========================= */
+/*        SLIDERS            */
+/* ========================= */
+
+/* -------- BACKLIGHT -------- */
+
+#backlight-slider {
+    padding: 0;
+    margin: 0;
+}
+
+#backlight-slider slider {
+    min-height: 0px;
+    min-width: 0px;
+    opacity: 0;
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+#backlight-slider trough {
+    min-height: 8px;
+    min-width: 90px;
+    border-radius: 6px;
+    background: alpha(@foreground,0.2);
+    margin-left: 2px;
+}
+
+#backlight-slider highlight {
+    border-radius: 6px;
+    background: @color4;
+}
+
+/* -------- VOLUME -------- */
+
+#pulseaudio-slider {
+    padding: 0;
+    margin: 0;
+}
+
+#pulseaudio-slider slider {
+    min-height: 0px;
+    min-width: 0px;
+    opacity: 0;
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+#pulseaudio-slider trough {
+    min-height: 8px;
+    min-width: 90px;
+    border-radius: 6px;
+    background: alpha(@foreground,0.2);
+    margin-left: 2px;
+}
+
+#pulseaudio-slider highlight {
+    border-radius: 6px;
+    background: @color5;
+}
+
+#custom-poweroff,
+#custom-reboot,
+#custom-logout {
+	font-size: 13px;
+}

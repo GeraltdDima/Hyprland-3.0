@@ -1,0 +1,27 @@
+[
+    {
+        "include": [
+            "./groups.jsonc",
+            "./modules.jsonc"
+        ],
+        "layer": "top",
+        "position": "top",
+        "height": 36,
+        "spacing": 6,
+
+        "modules-left": [
+            "group/arch"
+        ],
+
+        "modules-center": [
+            "group/time"
+        ],
+
+        "modules-right": [
+            "group/hardware",
+            "group/utils",
+            "tray",
+            "group/power"
+        ]
+    }
+]
