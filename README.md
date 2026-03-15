@@ -16,12 +16,12 @@ sudo dnf install hyprland wofi waybar swww alacritty nvim mako python-pywal
 ```
 
 ## Fonts:
-1.noto-fonts
-2.noto-fonts-emoji
-3.ttf-font-awesome
-4.otf-font-awesome
-5.ttf-jetbrains-mono
-6.ttf-jetbrains-mono-nerd
+- noto-fonts
+- noto-fonts-emoji
+- ttf-font-awesome
+- otf-font-awesome
+- ttf-jetbrains-mono
+- ttf-jetbrains-mono-nerd
 
 ## Installation:
 ```
@@ -38,4 +38,5 @@ rm -rf ~/Hyprland-3.0
 ```
 
 After installation you can select your wallpaper by Mod+Shift+W and select your wallpaper to generate your pallete
-Thank you!
+
+### Thank you
