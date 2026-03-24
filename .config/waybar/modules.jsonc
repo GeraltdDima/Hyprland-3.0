@@ -5,11 +5,6 @@
         "orientation": "horizontal",
         "device": "intel_backlight"
     },
-    "pulseaudio/slider": {
-        "min": 0,
-        "max": 100,
-        "orientation": "horizontal"
-    },
     "backlight": {
         "device": "intel_backlight",
         "tooltip": false,
@@ -17,7 +12,7 @@
     },
     "battery": {
         "interval": 60,
-        "format": "{icon}  {capacity}%",
+        "format": "{capacity}% {icon}",
         "format-icons": [
             "",
             "",
@@ -45,11 +40,12 @@
     "network": {
         "interface": "wlp1s0",
         "format": "{ifname}",
-        "format-wifi": "{essid}",
-        "format-disconnected": "Disconnected",
+        "format-wifi": " ",
+        "format-disconnected": "󰖪",
         "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
         "tooltip-format-disconnected": "Disconnected",
-        "max-length": 50
+        "max-length": 50,
+		"on-click": "wifi_menu"
     },
     "pulseaudio": {
         "format": "{volume}% {icon}",
@@ -71,7 +67,8 @@
         },
         "ignored-sinks": [
             "Easy Effects Sink"
-        ]
+        ],
+		"on-click": "pavucontrol"
     },
     "tray": {
         "spacing": 10
@@ -120,9 +117,8 @@
 	    "tooltip": false,
 	    "on-click": "wallpaper_changer"
     },
-	"custom/youtube": {
-		"format": "",
-		"tooltip": false,
-		"on-click": "firefox youtube.com"
+	"custom/utilmenu": {
+		"format": "",
+		"tooltip": false
 	}
 }

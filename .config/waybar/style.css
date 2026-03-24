@@ -1,4 +1,4 @@
-@import url("/home/dima/.cache/wal/colors-waybar.css");
+@import url("colors-waybar.css");
 
 * {
     border: none;
@@ -29,11 +29,11 @@ window#waybar {
 #power,
 #tray {
 
-    background: @background;
+    background: alpha(@background, 0.35);
     color: @foreground;
 
     border-radius: 14px;
-    padding: 4px 12px;
+    padding: 3px 12px;
 }
 
 /* ===== ARCH ICON ===== */
@@ -59,7 +59,7 @@ window#waybar {
 }
 
 #utils * {
-    margin: 0 8px;
+    margin: 0 7px;
 }
 
 /* power icons крупнее */
@@ -67,6 +67,11 @@ window#waybar {
 #power * {
     margin: 0 6px;
     font-size: 13px;
+}
+
+#custom-utilmenu {
+	font-size: 13px;
+	margin: 3px;
 }
 
 /* ===== WORKSPACES ===== */
@@ -87,7 +92,7 @@ window#waybar {
 }
 
 #workspaces button.active {
-    background: @color2;
+    background: alpha(@color2, 0.8);
     color: @background;
 }
 

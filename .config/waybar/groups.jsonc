@@ -1,75 +1,74 @@
 {
-    "include": [ "./modules.jsonc" ],
+	"include": [ "./modules.jsonc" ],
 
-    "group/arch": {
-        "orientation": "horizontal",
-        "modules": [
-            "custom/arch",
-            "hyprland/workspaces"
-        ]
-    },
-    "group/time": {
-        "orientation": "horizontal",
-        "modules": [
-            "clock",
-            "hyprland/language"
-        ]
-    },
-    "group/utils": {
-        "orientation": "horizontal",
-        "modules": [
-            "custom/filemanager",
-            "custom/clipboard",
-	 	    "custom/wallpaper",
-			"custom/youtube",
-            "custom/bluetooth"
-        ]
-    },
-    "group/volume": {
-        "orientation": "horizontal",
-        "drawer": {
-            "transition-duration": 300,
-            "transition-left-to-right": true,
-            "click-to-reveal": true
-        },
-        "modules": [
-            "pulseaudio",
-            "pulseaudio/slider"
-        ]
-    },
-    "group/brightness": {
-        "orientation": "horizontal",
-        "drawer": {
-            "transition-duration": 300,
-            "transition-left-to-right": true,
-            "click-to-reveal": true
-        },
-        "modules": [
-            "backlight",
-            "backlight/slider"
-        ]
-    },
-    "group/hardware": {
-        "orientation": "horizontal",
-        "modules": [
-            "network",
-            "battery",
-            "group/volume",
-            "group/brightness"
-        ]
-    },
-    "group/power": {
-        "orientation": "horizontal",
-        "drawer": {
-            "transition-duration": 300,
-            "transition-left-to-right": true,
-            "click-to-reveal": true
-        },
-        "modules": [
-            "custom/power",
-            "custom/poweroff",
-            "custom/reboot",
-            "custom/logout"
-        ]
-    }
+	"group/arch": {
+		"orientation": "horizontal",
+		"modules": [
+			"custom/arch",
+			"hyprland/workspaces"
+		]
+	},
+	"group/time": {
+		"orientation": "horizontal",
+		"modules": [
+			"clock",
+			"hyprland/language"
+		]
+	},
+	"group/utils": {
+		"orientation": "horizontal",
+		"drawer": {
+			"transition-duration": 300,
+			"transition-left-to-right": true,
+			"click-to-reveal": true
+		},
+		"modules": [
+			"custom/utilmenu",
+			"custom/filemanager",
+			"custom/clipboard",
+			"custom/wallpaper",
+			"custom/bluetooth"
+		]
+	},
+	"group/volume": {
+		"orientation": "horizontal",
+		"modules": [
+			"pulseaudio"
+		]
+	},
+	"group/brightness": {
+		"orientation": "horizontal",
+		"drawer": {
+			"transition-duration": 300,
+			"transition-left-to-right": true,
+			"click-to-reveal": true
+		},
+		"modules": [
+			"backlight",
+			"backlight/slider"
+		]
+	},
+	"group/hardware": {
+		"orientation": "horizontal",
+		"modules": [
+			"battery",
+			"group/volume",
+			"group/brightness",
+			"network"
+		]
+	},
+	"group/power": {
+		"orientation": "horizontal",
+		"drawer": {
+			"transition-duration": 300,
+			"transition-left-to-right": true,
+			"click-to-reveal": true
+		},
+		"modules": [
+			"custom/power",
+			"custom/poweroff",
+			"custom/reboot",
+			"custom/logout"
+		]
+	}
 }
